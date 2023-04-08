@@ -18,7 +18,7 @@
       <div class="header container">
         <!-- SITE NAVIGATION -->
         <nav>
-          <a class="logo brand-main-color" href="index.html"
+          <a class="logo-header brand-main-color" href="index.html"
             >web<span class="brand-secondary-color">Studio</span></a
           >
           <ul class="nav">
@@ -28,9 +28,19 @@
           </ul>
         </nav>
         <!-- CONTACT INFO -->
-        <ul class="contact-info">
-          <li><a class="highlight" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="highlight" href="tel:+48111111111">+48 111 111 111</a></li>
+        <ul class="contact">
+          <li class="contact-info">
+            <span
+              ><svg class="icon-k" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg></span
+            ><a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-info">
+            <span
+              ><svg class="icon-k" width="16" height="12">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg></span
+            ><a href="tel:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -53,7 +63,7 @@
           </ul>
           <!-- PHOTO SECTION -->
           <ul class="examples">
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port1.jpg" alt="laptop screen" width="370" height="294" />
                 <figcaption class="description">
@@ -62,7 +72,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port2.jpg" alt="basketball players" width="370" height="294" />
                 <figcaption class="description">
@@ -71,7 +81,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port3.jpg" alt="restaurant logo" width="370" height="294" />
                 <figcaption class="description">
@@ -80,7 +90,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port4.jpg" alt="headphones" width="370" height="294" />
                 <figcaption class="description">
@@ -89,7 +99,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port5.jpg" alt="two boxes" width="370" height="294" />
                 <figcaption class="description">
@@ -98,7 +108,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port6.jpg" alt="pc screen" width="370" height="294" />
                 <figcaption class="description">
@@ -107,7 +117,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port7.jpg" alt="opened magazine" width="370" height="294" />
                 <figcaption class="description">
@@ -116,7 +126,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port8.jpg" alt="pendant" width="370" height="294" />
                 <figcaption class="description">
@@ -125,7 +135,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="card-highlight">
               <figure>
                 <img src="images/port9.jpg" alt="writing on computer" width="370" height="294" />
                 <figcaption class="description">
@@ -140,19 +150,45 @@
     </main>
     <footer class="background-secondary">
       <div class="container">
-        <a class="logo brand-main-color" href="/index.html"
-          >web<span class="brand-tertiary-color">Studio</span></a
-        >
-        <!-- CONTACT INFO -->
-        <address>
-          <ul class="address">
+        <div class="address">
+          <a class="logo-footer brand-main-color" href="/index.html"
+            >web<span class="brand-tertiary-color">Studio</span></a
+          >
+          <!-- CONTACT INFO -->
+          <ul class="address-info">
             <li>m. Warszawa, Aleje Jerozolimskie 21</li>
             <li>
               <a href="mailto:info@example.com">info@example.com</a>
             </li>
             <li><a href="tel:+48111111111">+48 111 111 111</a></li>
           </ul>
-        </address>
+        </div>
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+          <h3 class="join">dołącz do nas</h3>
+          <ul class="icons-socials">
+            <li class="icon-f">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </li>
+            <li class="icon-f">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </li>
+            <li class="icon-f">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </li>
+            <li class="icon-f">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
