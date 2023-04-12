@@ -23,6 +23,7 @@ a {
   text-decoration: none;
   padding: 0;
   margin: 0;
+  color: inherit;
 }
 button {
   cursor: pointer;
@@ -55,13 +56,12 @@ nav {
   align-items: center;
   padding: 24px 0px 25px 0px;
 }
-.logo-header {
+.logo {
   font-family: var(--brand-font);
   font-size: 26px;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 1.19;
-  margin-right: 93px;
 }
 .brand-main-color {
   color: var(--brand-primary-color);
@@ -79,12 +79,7 @@ nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.nav a {
-  color: inherit;
-}
-.icon-k {
-  margin-right: 10px;
+  margin-left: 93px;
 }
 .contact {
   align-content: center;
@@ -94,24 +89,21 @@ nav {
   color: var(--text-light-color);
   fill: var(--text-light-color);
 }
-.contact svg {
-  fill: inherit;
-}
-.contact a {
-  color: inherit;
-}
-.contact-info:hover {
+.contact li:hover {
   fill: var(--brand-primary-color);
   color: var(--brand-primary-color);
 }
-.background-hero {
+.contact-info {
+  display: inline-flex;
+  align-content: center;
+  gap: 10px;
+}
+.hero-section {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('/images/hero-background.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-.hero-section {
   padding: 200px 0;
   text-align: center;
 }
@@ -137,15 +129,10 @@ nav {
   background-color: var(--brand-primary-color);
   color: var(--brand-tertiary-color);
 }
-.icons-paragraphs,
-.icons-socials {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.icon-a {
+.icons-pagragraph {
   background-color: var(--light-background-color);
   padding: 25px 100px;
+  margin-bottom: 30px;
 }
 .paragraphs {
   display: flex;
@@ -203,20 +190,20 @@ nav {
   color: var(--text-light-color);
   margin-bottom: 16px;
 }
-.icons-socials {
+.icons-socials-list {
+  display: flex;
+  justify-content: center;
   gap: 10px;
 }
-.icon-s {
+.icons-social {
   display: flex;
   align-items: center;
   padding: 12px;
   border-radius: 100%;
   fill: var(--icons-color);
 }
-.icon-s:hover,
-.icon-s:focus,
-.icon-f:hover,
-.icon-f:focus {
+.icons-social:hover,
+.icons-social:focus {
   background-color: var(--brand-primary-color);
   fill: var(--brand-tertiary-color);
 }
@@ -225,15 +212,14 @@ nav {
   justify-items: center;
   gap: 30px;
 }
-.icon-c {
-  display: flex;
+.icons-clients li {
   padding: 17.71px 32px 14.25px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icons-color);
 }
-.icon-c:hover,
-.icon-c:focus {
+.icons-clients li:hover,
+.icons-clients li:focus {
   fill: var(--brand-primary-color);
   border: 1px solid var(--brand-primary-color);
 }
@@ -271,7 +257,7 @@ nav {
 .examples figure {
   border: 1px solid #eeeeee;
 }
-.card-highlight:hover {
+.card:hover {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -304,14 +290,6 @@ footer,
   flex-direction: column;
   margin-right: 70px;
 }
-.logo-footer {
-  font-family: var(--brand-font);
-  font-size: 26px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 1.19;
-  margin-bottom: 11px;
-}
 .address-info,
 .address-info a {
   font-size: 14px;
@@ -319,6 +297,7 @@ footer,
   line-height: 1.71;
   color: var(--brand-tertiary-color);
   letter-spacing: 0.03em;
+  margin-top: 11px;
 }
 .address-info > li {
   margin-top: 9px;
@@ -334,11 +313,7 @@ footer,
   color: var(--brand-tertiary-color);
   margin-bottom: 20px;
 }
-.icon-f {
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  border-radius: 100%;
+.icons-dark {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--brand-tertiary-color);
 }
