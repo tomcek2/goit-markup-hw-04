@@ -43,6 +43,16 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.brand-main-color {
+  color: var(--brand-primary-color);
+}
+.brand-secondary-color {
+  color: var(--brand-secondary-color);
+}
+.brand-tertiary-color {
+  color: var(--brand-tertiary-color);
+}
+/*--- HEADER ---*/
 .header {
   display: flex;
   align-items: center;
@@ -60,15 +70,6 @@ nav {
   font-weight: 700;
   text-transform: capitalize;
   line-height: 1.19;
-}
-.brand-main-color {
-  color: var(--brand-primary-color);
-}
-.brand-secondary-color {
-  color: var(--brand-secondary-color);
-}
-.brand-tertiary-color {
-  color: var(--brand-tertiary-color);
 }
 .nav,
 .contact {
@@ -96,6 +97,7 @@ nav {
   align-content: center;
   gap: 10px;
 }
+/*--- HERO ---*/
 .hero-section {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-background.jpg');
@@ -127,6 +129,7 @@ nav {
   background-color: var(--brand-primary-color);
   color: var(--brand-tertiary-color);
 }
+/*--- ARTICLES ---*/
 .icons-pagragraph {
   background-color: var(--light-background-color);
   padding: 25px 100px;
@@ -149,6 +152,7 @@ nav {
   color: var(--text-light-color);
   line-height: 1.71;
 }
+/*--- FOTO ---*/
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -164,6 +168,7 @@ nav {
 .background-light {
   background-color: var(--light-background-color);
 }
+/*-- PEOPLE --*/
 .people {
   display: flex;
   gap: 30px;
@@ -205,6 +210,7 @@ nav {
   background-color: var(--brand-primary-color);
   fill: var(--brand-tertiary-color);
 }
+/*-- CLIENST --*/
 .icons-clients {
   display: flex;
   justify-items: center;
@@ -221,6 +227,7 @@ nav {
   fill: var(--brand-primary-color);
   border: 1px solid var(--brand-primary-color);
 }
+/*--- PORTFOLIO ---*/
 .buttons-portfolio {
   display: flex;
   justify-content: center;
@@ -276,8 +283,11 @@ nav {
   line-height: 1.87;
   color: var(--text-light-color);
 }
-footer {
+
+/*--- FOOTER ---*/
+.footer {
   padding: 60px 0;
+  display: flex;
 }
 footer,
 .background-secondary {
@@ -303,9 +313,6 @@ footer,
 .address-info a {
   opacity: 0.6;
 }
-.footer {
-  display: flex;
-}
 .join {
   color: var(--brand-tertiary-color);
   margin-bottom: 20px;
@@ -318,4 +325,42 @@ footer,
 .highlight:focus {
   color: var(--brand-primary-color);
   fill: var(--brand-primary-color);
+}
+/*--- MODAL ---*/
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--brand-tertiary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--brand-tertiary-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 6px 6px 6px 5px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
